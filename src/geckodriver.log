@@ -1,0 +1,107 @@
+1631692380683	geckodriver	INFO	Listening on 127.0.0.1:51492
+1631692383745	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\kaay5\\AppData\\Local\\Temp\\rust_mozprofileSqF4cO"
+*** You are running in headless mode.
+1631692384756	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kaay5\\AppData\\Local\\Temp\\rust_mozprofileSqF4cO\\search.json.mozlz4", (void 0)))
+1631692387911	Marionette	INFO	Listening on port 51502
+1631692388003	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Object
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+Exiting due to channel error.
+Exiting due to channel error.
+te enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kaay5\\AppData\\Local\\Temp\\rust_mozprofileyT2i0J\\search.json.mozlz4", (void 0)))
+1631692515623	Marionette	INFO	Listening on port 51605
+1631692515799	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Object
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+ata\\Local\\Temp\\rust_mozprofile9jqebd"
+*** You are running in headless mode.
+1631692588634	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kaay5\\AppData\\Local\\Temp\\rust_mozprofile9jqebd\\search.json.mozlz4", (void 0)))
+1631692591600	Marionette	INFO	Listening on port 51704
+1631692591979	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Object
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+ata\\Local\\Temp\\rust_mozprofileombPWx"
+*** You are running in headless mode.
+1631692680079	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kaay5\\AppData\\Local\\Temp\\rust_mozprofileombPWx\\search.json.mozlz4", (void 0)))
+1631692683228	Marionette	INFO	Listening on port 51813
+1631692683733	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Object
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+Exiting due to channel error.
+:\\Users\\kaay5\\AppData\\Local\\Temp\\rust_mozprofileRZVX5s"
+*** You are running in headless mode.
+1631692772910	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kaay5\\AppData\\Local\\Temp\\rust_mozprofileRZVX5s\\search.json.mozlz4", (void 0)))
+1631692775821	Marionette	INFO	Listening on port 51914
+1631692776195	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Object
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+und" "-no-remote" "-profile" "C:\\Users\\kaay5\\AppData\\Local\\Temp\\rust_mozprofileqUmz15"
+*** You are running in headless mode.
+1631692993307	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kaay5\\AppData\\Local\\Temp\\rust_mozprofileqUmz15\\search.json.mozlz4", (void 0)))
+1631692996211	Marionette	INFO	Listening on port 52078
+1631692996327	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Object
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+und" "-no-remote" "-profile" "C:\\Users\\kaay5\\AppData\\Local\\Temp\\rust_mozprofilektC3Zl"
+*** You are running in headless mode.
+1631693112247	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kaay5\\AppData\\Local\\Temp\\rust_mozprofilektC3Zl\\search.json.mozlz4", (void 0)))
+1631693115335	Marionette	INFO	Listening on port 52187
+1631693115532	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Object
+1631697130181	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+dless mode.
+1631693214715	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kaay5\\AppData\\Local\\Temp\\rust_mozprofileXS48ZR\\search.json.mozlz4", (void 0)))
+1631693217363	Marionette	INFO	Listening on port 52307
+1631693217770	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Object
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+Exiting due to channel error.
+:\\Users\\kaay5\\AppData\\Local\\Temp\\rust_mozprofileLZjLnw"
+*** You are running in headless mode.
+1631693334086	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kaay5\\AppData\\Local\\Temp\\rust_mozprofileLZjLnw\\search.json.mozlz4", (void 0)))
+1631693337029	Marionette	INFO	Listening on port 52406
+1631693337488	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Object
+1631702322270	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE

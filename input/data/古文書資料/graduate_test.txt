@@ -1,0 +1,64 @@
+!apt-get install lshw pciutils
+--
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+pciutils is already the newest version (1:3.5.2-1ubuntu1.1).
+The following NEW packages will be installed:
+  lshw usbutils
+0 upgraded, 2 newly installed, 0 to remove and 13 not upgraded.
+Need to get 231 kB/439 kB of archives.
+After this operation, 1,441 kB of additional disk space will be used.
+Err:1 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 lshw amd64 02.18-0.1ubuntu6.18.04.1
+  404  Not Found [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.18-0.1ubuntu6.18.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+
+-----------
+対策
+!apt-get update
+--
+Fri Jan 29 19:51:27 2021       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.32.03    Driver Version: 418.67       CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla T4            Off  | 00000000:00:04.0 Off |                    0 |
+| N/A   38C    P8    11W /  70W |      0MiB / 15079MiB |      0%      Default |
+|                               |                      |                 ERR! |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+
+------------
+
+!python ./drive/MyDrive/学校/5/研究/卒業研究/PRMU/alcon23-master/src/creat_vocab.py
+
+^^
+Traceback (most recent call last):
+  File "./drive/MyDrive/学校/5/研究/卒業研究/PRMU/alcon23-master/src/creat_vocab.py", line 6, in <module>
+    from vocab import Vocab
+ModuleNotFoundError: No module named 'vocab'
+
+----------------------
+AttributeError: 'CosineAnnealingWarmUpRestarts' object has no attribute 'T_cur'
+
+
+
+
+
+
+
+
+
+
+
