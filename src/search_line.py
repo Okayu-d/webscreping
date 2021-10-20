@@ -2,6 +2,10 @@ import os
 import time
 import pandas as pd
 import pprint
+import warnings
+
+warnings.resetwarnings()
+warnings.simplefilter('ignore', FutureWarning)
 
 def add_dictionary(apper_character = str(), d1 = dict()):
     # 新出文字の場合
@@ -19,7 +23,7 @@ def can_add_dictionary(line_range = int(), search_index = int()):
     else:
         return True
 
-def search_beaf(path = str(), search_character = str(), line_character = dict()):
+def search_line(path = str(), search_character = str(), line_character = dict()):
     # 本文の読み込み
     df = pd.read_csv(path, header=None, names = ['翻刻文'])
 
@@ -39,7 +43,7 @@ def search_beaf(path = str(), search_character = str(), line_character = dict())
 
 def main():
     # 探す文字
-    search_character = 'れ'
+    search_character = input('Search Line: ')
     folder = "publish"
     publish = "諸御趣意書并御下知向之写"
 
@@ -53,7 +57,7 @@ def main():
         output_file = os.path.join(output_dir, file_name)
 
         # 前後の文字を検索
-        line_character = search_beaf(output_file, search_character, line_character)
+        line_character = search_line(output_file, search_character, line_character)
 
     # ファイルの出力
     df = pd.io.json.json_normalize(line_character)
@@ -61,8 +65,9 @@ def main():
     df = df.set_axis(['content'], axis = 'columns')
 
     output_path = os.path.join(os.getcwd(), 'out', 'character_line')
-
     df.to_csv(os.path.join(output_path, search_character + '.csv'))
+    pprint.pprint(line_character)
+    print(len(line_character))
     
 main()
 

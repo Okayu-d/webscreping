@@ -14,11 +14,12 @@ def word_dict(input_file_path: str(), n_dict: dict(), max_len: int()):
             max_len = line_len
 
         #取得文字数
-        for n in (1, line_len):
+        for n in range(1, line_len+1):
+            # print(line, n)
             # 文字列の番地
             if n not in n_dict.keys():
                 n_dict[n] = dict()
-            for i in (0, line_len):
+            for i in range(0, line_len):
                 if i+(n-1) < line_len:
                     word_dict = n_dict[n]
                     words = join_char(i, n, line)
@@ -28,6 +29,7 @@ def word_dict(input_file_path: str(), n_dict: dict(), max_len: int()):
                         words_count = word_dict[words]
                         words_count = words_count + 1
                         word_dict[words] = words_count
+                    # print(n_dict[n], word_dict)
                     n_dict[n] = word_dict
                 else:
                     break
@@ -35,8 +37,8 @@ def word_dict(input_file_path: str(), n_dict: dict(), max_len: int()):
     return n_dict, max_len
 
 def join_char(start_num: int(), chatch_num: int(), line: str()):
-    words = str()
-    for i in range(start_num, chatch_num):
+    words = line[start_num]
+    for i in range(start_num+1, start_num+chatch_num):
         words = words + line[i]
     return words
 
@@ -81,17 +83,16 @@ def run():
 
         # 出現する文字
         character_dict, max_len = word_dict(input_file_path, character_dict, max_len)
+
+        # 消す
+        # break
     
-    print(max_len)
-    print(character_dict[1])
     for i in range(1, max_len-1):
+        if i not in character_dict.keys():
+            continue
         output_dict = character_dict[i]
         output_csv(output_dict, publish, i)
-
-def test():
-    word = join_char(0, 2, 'test')
-    print(word)
-
+        
 def main():
     run()
 
