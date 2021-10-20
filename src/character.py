@@ -28,7 +28,7 @@ def output_csv(character_dict: dict(), publish: str()):
     df = df.set_axis(['count('+str(characters)+')'], axis='columns')
 
     # 出力path
-    output_path = os.path.join(os.getcwd(), 'out', 'output_character')
+    output_path = os.path.join(os.getcwd(), 'out', 'character_dict')
     if not os.path.exists(output_path):
         os.mkdir(output_path)
     df.to_csv(os.path.join(output_path, publish + '.csv'))
