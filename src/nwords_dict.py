@@ -44,7 +44,7 @@ def output_csv(character_dict: dict(), publish: str(), words: int()):
     characters = int()
     for count in character_dict.values():
         characters = characters + count
-    print(characters)
+    # print(characters)
 
     # 出力ファイルの作成
     df = (pd.io.json.json_normalize(character_dict)).T
