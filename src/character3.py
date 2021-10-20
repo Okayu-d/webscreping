@@ -8,13 +8,18 @@ def search_character(input_file_path: str(), character_dict: dict()):
     # 一文を取得    
     for line in df['翻刻文']:
         # 一文字を取得
-        for character in line:
-            if character not in character_dict.keys():
-                character_dict[character] = 1
+        line_len = len(line)
+        for i in (0, line_len):
+            if i+2 < line_len:
+                three = line[i] + line[i+1] + line[i+2]
+                if three not in character_dict.keys():
+                    character_dict[three] = 1
+                else:
+                    character_count = character_dict[three]
+                    character_count = character_count + 1
+                    character_dict[three] = character_count
             else:
-                character_count = character_dict[character]
-                character_count = character_count + 1
-                character_dict[character] = character_count
+                break
     return character_dict    
 
 def output_csv(character_dict: dict(), publish: str()):
@@ -31,7 +36,7 @@ def output_csv(character_dict: dict(), publish: str()):
     output_path = os.path.join(os.getcwd(), 'out', 'output_character')
     if not os.path.exists(output_path):
         os.mkdir(output_path)
-    df.to_csv(os.path.join(output_path, publish + '.csv'))
+    df.to_csv(os.path.join(output_path, publish + '_3words.csv'))
 
     return 0
 
@@ -54,6 +59,7 @@ def main():
         # 出現する文字
         character_dict = search_character(input_file_path, character_dict)
     
+    print(character_dict)
     output_csv(character_dict, publish)
 
 main()
