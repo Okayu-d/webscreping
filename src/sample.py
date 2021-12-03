@@ -24,15 +24,20 @@ def exist_dict(d1: dict(), d2: dict()):
     # dict1, dict2 are compered -> exist_num of dict is higher than other dict, exist
     # len_value d1 > d2
 
+    # popをするためにリストに変更
     d2_keys = list(d2.keys())
     d2_values = list(d2.values())
 
     for k, v in d1.items():
         for index, key in enumerate(d2_keys):
+            # 更新された同じ長さの単語を見ないようにする．
             if len(key) >= len(k):
                 continue
+            # 短い単語が長い単語に含まれるとき
             if key in k:
+                # 出現頻度が長い単語のほうが多い，同じ
                 if v >= d2_values[index]:
+                    # print('out: {}, {} -> in: {}, {}'.format(d2_keys[index],d2_values[index], k, v))
                     d2_keys.pop(index)
                     d2_values.pop(index)
                     d2_keys.append(k)
@@ -61,8 +66,8 @@ def output_csv(character_dict: dict(), publish: str()):
 def main():
     input_words_len = 2
     folder = 'character_dict'
-    publish = '諸御趣意書并御下知向之写'
-    in_path = os.path.join(os.getcwd(), 'out', folder)
+    publish = '(養生教訓)医者談義 5巻'
+    in_path = os.path.join(os.getcwd(), 'out', folder, publish)
 
     op_dict = dict()
     dm_dict = dict()
@@ -77,12 +82,13 @@ def main():
             op_dict = dm_dict
             continue
 
-        # prevet zize0
+        # prevent zize0
         if len(dm_dict) == 0:
             continue
 
         op_dict = exist_dict(dm_dict, op_dict)
-        
+    
+    print('output2csv: {}'.format(os.path.join(in_path)))
     output_csv(op_dict, publish)
         
     return 0

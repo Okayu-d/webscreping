@@ -63,7 +63,7 @@ def output_csv(character_dict: dict(), publish: str(), words: int()):
 def run():
     # 参考文献になんの文字があるか，頻出文字，総文字数
     folder = "publish"
-    publish = "諸御趣意書并御下知向之写"
+    publish = "(養生教訓)医者談義 5巻"
 
     # 最大の文字列の長さ
     max_len = int(0)
@@ -75,7 +75,7 @@ def run():
     output_dict = dict()
 
     # 参考文献のページ数
-    for num in range(1, 194):
+    for num in range(1, 101):
         # 現在の場所 + out + folder + 参考文献名(publish)
         input_page = os.path.join(os.getcwd(), 'out', folder, publish)
         file_name = "page_" + str(num) + ".csv"
